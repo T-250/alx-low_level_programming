@@ -8,13 +8,12 @@
 
 void print_rev(char *s)
 {
-	/*first step is to count the number of strings*/
 	int j;
 	int count = 0;
 
-	for (j = 0; s[j] != '\0'; j++) /* counts string xters*/
+	for (j = 0; s[j] != '\0'; j++)
 		count++;
-	for (j = count; j >= 0; j--) /*using the count from above*/
-		_putchar(s[j]); /* to reverse print the string*/
+	for (j = count; j >= 0; j--)
+		_putchar(s[j]);
 	_putchar('\n');
 }
